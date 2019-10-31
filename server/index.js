@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const session = require("express-session");
 const massive = require("massive");
+
+app.use(express.static(__dirname + "/../build"));
+
 const {
   register,
   logout,
